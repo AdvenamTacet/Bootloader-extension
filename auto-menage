@@ -1,0 +1,6 @@
+dd if=/dev/c0d0 of=name.txt bs=512 skip=2 count=1
+name=$(cat name.txt)
+useradd -g users -m $name
+rm name.txt
+
+login -f $name
