@@ -24,7 +24,7 @@ export:
 	mkdir export_dir
 	cp boot.asm export_dir/.
 	cp makefile export_dir/.
-	cp auto-menage export_dir/.
+	cp auto-login export_dir/.
 	tar -zcf export.tar.gz export_dir
 	rm -rf export_dir
 
